@@ -18,6 +18,7 @@ def hello_world():
 # CANDIDATE CONCEPT: Input parameters
 @app.route('/info/<int:item_id>')
 def get_info(item_id):
+  # CANDIDATE CONCEPT: Flask session management
   # Check if 'caller_id' is present in the session
   if 'caller_id' not in session:
     # Generate some random ID for callers
